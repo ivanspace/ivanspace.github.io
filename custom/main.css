@@ -15,6 +15,18 @@
 @import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
 @import url('https://fonts.googleapis.com/css?family=Arvo');
 
+.no-touch #video-container   {
+	display: block;
+}
+
+#video-container {
+	display: none;
+}
+
+
+
+
+
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
   background-color: #ffb799;
 }
