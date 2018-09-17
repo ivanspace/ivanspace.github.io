@@ -35,11 +35,11 @@
 }
 #myFooter #credits a {
  color:#ff4c00;
- font-size:17px;
+ font-size:12px;
 }
 #myFooter #credits a:hover{
  color:#fff200;
- font-size:17px;
+ font-size:12px;
 }
 
 body{
@@ -1104,9 +1104,10 @@ xkeyframes
 
 #myFooter .footer-copyright {
     background-color: black;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     text-align: center;
+		font-size: 12px;
 }
 
 #myFooter .footer-copyright p {
