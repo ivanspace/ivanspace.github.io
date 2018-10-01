@@ -1,858 +1,164 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="author" content="Developed by Ivan Biji and Designed by Aman Harikumar">
- <meta name="author" content="Snippets used from http://codyhouse.co/">
- <meta name="author" content="Photos and backgrounds from https://unsplash.com/">
-<link rel="stylesheet" href="includes/normalize.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-<link rel="stylesheet prefetch" href="includes/animate.min.css">
-<link href="includes/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="custom/main.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Interface 2018 Website</title>
-<style>
-	@media (max-width:767px){
-.navbar-custom .navbar-collapse {
-            border-color: white;
-            background-color: rgba(40,40,40,0.90);
-	        margin-top: 10px;
-	        padding-bottom: 10px;
-         }
-	}
-</style>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/demo.css"> <!-- Demo style -->
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link href="https://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+	<title>Log In &amp; Sign Up Form | CodyHouse</title>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" onload="myFunction()" style="margin:0;">
-
-<!--
-
- Author :- Developed by Ivan Biji and Designed by Aman Harikumar.
- Snippets used from http://codyhouse.co/
- Photos and backgrounds from https://unsplash.com/
-
--->
-
-
-
-<div id="loading" class="container-fluid" style="width: 100%; height: 100;">
-<div id="loading-center">
-<div id="loading-center-absolute">
-<div class="object" id="object_one"></div>
-<div class="object" id="object_two"></div>
-<div class="object" id="object_three"></div>
-<div class="object" id="object_four"></div>
-</div>
-</div>
-
-</div>
-
-<div id="fullbody" style="display: none;">
-<div class="mainclass" onClick="" >
-
-
-
-
-<!-- Navbar -->
-
-<nav class="navbar navbar-expand-md fixed-top navbar-custom">
-
-  <img src="images/NIT-Calicut-Logo.png" width="40px;" style="display: inline-block; margin-right: 20px;">
-
-
-  <button class="navbar-toggler pull-right custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="text-center" style="font-size: 33px; color: white;" ><i class="fas fa-bars" style="margin-top: 2px;"></i></span>
-  </button>
-
-  <div class="collapse navbar-collapse text-center" id="collapsibleNavbar" style="">
-    <ul class="navbar-nav mr-auto">
-     <li class="nav-item">
-        <a class="nav-link" href="#carouselExampleIndicators">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#myFooter">Contact Us</a>
-      </li>
-      <!--li class="nav-item">
-        <a class="nav-link">Gallery</a>
-      </li-->
-      <li class="nav-item dropdown">
-      <a class="nav-link" href="#events" id="navbardrop1" data-toggle="dropdown">
-        Events
-      </a>
-	  <!--div class="container text-left">
-	  <div class="container col-4 text-left">
-      <div class="dropdown-menu animated flipInY ">
-        <a class="dropdown-item" href="#">Expo</a>
-        <a class="dropdown-item" href="#">Pitching</a>
-        <a class="dropdown-item" href="#">Lectures</a>
-        <a class="dropdown-item" href="#">Talks</a>
-      </div>
-	  </div>
-	  </div-->
-    </li>
-    </ul>
-
-    <ul class="navbar-nav">
-    <li class="nav-item" >
-    	<a class="nav-link button1" href="register.html"><i class="fas fa-edit fa-lg"></i>&nbsp;Register Now</a>
-	  </li>
-    </ul>
-  </div>
-</nav>
-
-
-
-
-<!-- carousel -->
-  <div id="carouselExampleIndicators" class="carousel carousel-fade slide" data-ride="carousel">
-  <div class="container-fluid text-center" style="position: absolute; z-index: 300; padding-top: 0vmin;" >
-
-	<section class="cd-intro container-fluid text-center">
-		<div class="row" style="width: 100%; height: 100%;padding: 0vw 20vw; position: relative; ">
-      <div class="container-fluid d-none d-sm-block" style="padding-top:30vmin;"> </div>
-		  <div class="col-sm-6 container-fluid d-none d-sm-block text-right" >
-		  <img id="logomax" class="img-fluid animated rollIn" src="images/logomax.png" style="animation-duration: 2.5s;">
-		  </div>
-		  <div class="col-sm-6 animated zoomInRight container-fluid text-left d-none d-sm-block" style="padding-top: 7vmin; animation-duration: 2s;">
-		  <img class="img-fluid text-left" src="images/textmax.png" style="width: 50vmin;">
-		  <h1 class="cd-headline letters rotate-3">
-			<span class="cd-words-wrapper">
-				<b class="is-visible">By&nbsp;NIT&nbsp;Calicut</b>
-				<b>Pitching</b>
-				<b>Talks</b>
-				<b>Expo&nbsp;</b>
-			</span>
-		  </h1>
-		  </div>
-		  <div class="col-12 d-none d-sm-block animated slideInUp col-sm-12" style="padding-top: 15vmin;animation-duration: 2s;">
-			 <a href="register.html"><button class="buttonc">REGISTER NOW</button></a>
-
-		  </div>
-      <div class="col-12 d-none d-sm-block animated slideInUp col-sm-12" style="padding-top: 10px;;animation-duration: 2s;">
-			 <a class="modalfire" id="modal-trigger26" data-type="cd-modal-trigger"><button class="buttonc">TIMELINE</button></a>
-
-
-
-    </div>
-		 <!-- for sm screen    -->
-     <div class="container-fluid d-block d-sm-none" style="padding-top:16vh;">
-		 <div class="col-sm-6 container-fluid d-block d-sm-none text-center" style="">
-		  <img class="img-fluid animated bounceInLeft mx-auto  d-block text-center" src="images/logomax.png" style="width: 43vmin; animation-duration: 2s;">
-		  </div>
-		  <div class="col-sm-6 animated bounceInRight container-fluid d-block d-sm-none" style="padding-top: 3vmin; animation-duration: 2s; text-center">
-		  <img class="img-fluid mx-auto d-block" src="images/textmax.png" style="width: 55vmin;">
-		  <h1 class="cd-headline letters rotate-3">
-			<span class="cd-words-wrapper">
-				<b class="is-visible">By&nbsp;NIT&nbsp;Calicut</b>
-				<b>PITCHING</b>
-				<b>&nbsp;&nbsp;TALKS&nbsp;</b>
-				<b>&nbsp;&nbsp;EXPO&nbsp;&nbsp;</b>
-			</span>
-		</h1>
-		  </div>
-		  <div class="col-12 d-block d-sm-none  animated slideInUp text-center" style="padding-top: 5vmin; animation-duration: 2s;">
-			 <a href="register.html"><button class="buttond">REGISTER&nbsp;NOW</button></a>
-		  </div>
-      <div class="col-12 d-block d-sm-none  animated slideInUp text-center" style="padding-top: 10px; animation-duration: 2s;">
-			 <a class="modalfire" id="modal-trigger26" data-type="cd-modal-trigger"><button class="buttond">&nbsp;&nbsp;TIMELINE&nbsp;&nbsp;</button></a>
-		  </div>
-     </div>
-		</div>
-
-	</section>
-	</div>
-
-
-  <div class="carousel-inner">
-    <div class="carousel-item">
-		<im class="d-block w-100" src="images/1.jpg"  alt="First Image"></im>
-
-    </div>
-    <div class="carousel-item">
-		<im class="d-block w-100" src="images/2.jpg"  alt="Second Image"></im>
-    </div>
-    <div class="carousel-item">
-      <im class="d-block w-100" src="images/3.jpg"  alt="Third Image"></im>
-    </div>
-	<div class="carousel-item">
-      <im class="d-block w-100" src="images/4.jpg"  alt="Fourth Image"></im>
-      <!--div class="carousel-caption d-md-block">
-        <img class="img-fluid" src="images/group.svg" style="width: 15vh;" data-animation="animated bounceInLeft" >
-              <h3 data-animation="animated bounceInRight">
-                EVENTS
-              </h3>
-              <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button>
-		</div-->
-    </div>
-  </div>
-
-</div>
-
-
-
-
-
-
-<div class="parallax whoarewe container-fluid">
-<div class="container-fluid">
-
-		<div class="container-fluid text-center">
-		 <div class="row">
-
-		  <div class="container text-center col-lg-6" style="color:white; font-size: 22px; padding-top: 10vmax; padding-left: 10vmax; padding-bottom: 10vmax; padding-right: 8vmax; font-family: 'Reem Kufi', sans-serif;" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-quad" >
-			  <div class="text-center" style="color: #ff4c00; font-size: 32px;padding-bottom: 20px;"> WHAT ARE WE ?<hr style="border-top: 2px solid #8c8b8b; width:90%; margin-top:0px; border-radius: 100%;"></div>
-			  Interface acts as a medium for the innovative minds of India to work with industry experts, and professionals through a two-day intensive mentoring programme where they will be introduced into the variable attributes of start-up ecosystem ranging from refining their pitch to fundraising. The teams winnowed after the mentorship programme will be invited to the final round that will be held during Tathva, where the teams will get to pitch their ideas before the Investors.
-		  </div>
-		   <div class="container-fluid col-lg-6" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-quad">
-	      <div class="container  text-right" style="padding-top: 5vw; padding-left: 0vmax; padding-right: 0vmax; padding-bottom: 40px;">
-			  <div class="embed-responsive embed-responsive-16by9">
-  <iframe id="video-container" class="embed-responsive-item" src="https://www.youtube.com/embed/20us7_12Pc4?ecver=2" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <!--iframe width="560" height="315" src="https://www.youtube.com/embed/20us7_12Pc4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe-->
-</div>
-          </div>
-		    <!--div class="container text-center d-block d-md-none" style="padding-top: 20vmin; padding-left: 0vmax; padding-right: 0vmax;">
-			  <img class="img-fluid" src="images/meetingwrw.svg" style="width: 28vmax;">
-          </div-->
-		  </div>
-		</div>
-	  </div>
-
-
-</div>
-</div>
-<!--div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wA0Mwf5ncvA?ecver=2" allowfullscreen></iframe>
-</div-->
-
-<!-- Events -->
-<div class="parallax eventpane" id="events">
-<div class="container-fluid text-center" style="padding: 0px 15px; padding-top: 100px; padding-bottom: 20px;" >
-
-<div style="font-size:40px; color: #ffffff; font-family: 'Reem Kufi', sans-serif;" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-quad">Events<hr style="border-top: 2px solid #8c8b8b; width:90%; margin-top:0px;">
-  <!--p class="animated pulse" style="padding-top:12px; color:#ff471a; font-size:25px;  animation-duration: 1.3s;
-  animation-iteration-count: infinite; ">Registration is now open for Nurturing Program !!!</p--></div>
-<br>
-<div class="container-fluid" >
-	<div class="row">
-    <div class="container-fluid col-sm-6 col-md-6 col-lg-3 eventbox" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-quad">
-        <figure class="cap-bot" data-text="MENTORING WEEKEND">
-     <img class="img-fluid" src="images/nik-macmillan-280300-unsplash.jpg" alt="">
-        <figcaption><div class="insidefig"><h1>Mentoring Weekend</h1>
-          <hr style="border-top: 1px solid #8c8b8b; width:15%; margin-top:0px;">
-          <p>Interface provides an exclusive platform for young entrepreneurs to get one on one mentorship from the best alumini startups and incubators focusing on marketing and finacial aspects of the product.</p></div></figcaption>
-   </figure>
-      <a href="#0" class="modalfire" id="modal-trigger25" data-type="cd-modal-trigger" ><button class="buttonE">Learn More</button></a>
-    </div>
-	   <div class="container-fluid col-sm-6 col-md-6 col-lg-3 eventbox" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-quad">
-	       <figure onClick="" class="cap-bot" data-text="IDEA SLAM">
-			<img class="img-fluid" src="images/headway-566297-unsplash.jpg" alt="">
-			   <figcaption><div class="insidefig"><h1>Idea Slam</h1>
-				   <hr style="border-top: 1px solid #8c8b8b; width:15%; margin-top:0px;">
-				   <p>In five precise minutes anyone with a game-changing idea can present them in front the amazing crowd.</p></div></figcaption>
-		</figure>
-		   <a href="#0" id="modal-trigger22" data-type="cd-modal-trigger" class="modalfire" ><button class="buttonE">Lean More</button></a>
-	   </div>
-	   <div class="container-fluid col-sm-6 col-md-6 col-lg-3 eventbox" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-quad">
-	       <figure class="cap-bot" data-text="STARTUP PITCHING">
-			<img class="img-fluid" src="images/benjamin-child-17946-unsplash.jpg" alt="">
-			   <figcaption><div class="insidefig"><h1>Startup Pitching</h1>
-				   <hr style="border-top: 1px solid #8c8b8b; width:15%; margin-top:0px;">
-				   <p>Are you an existing Start Up ?? Wanna a platform to pitch to renowned investors and capitalists? Join us at Interface 2018 and redeem yourself worthy</p></div></figcaption>
-		</figure>
-		    <a href="#0" class="modalfire" id="modal-trigger23" data-type="cd-modal-trigger"><button class="buttonE">Learn More</button></a>
-	   </div>
-		<div class="container-fluid col-sm-6 col-md-6 col-lg-3 eventbox" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-quad">
-	       <figure class="cap-bot" data-text="WORKSHOPS">
-			<img class="img-fluid" src="images/maxime-rossignol-266384-unsplash.jpg" alt="">
-			   <figcaption><div class="insidefig"><h1>Workshops</h1>
-				   <hr style="border-top: 1px solid #8c8b8b; width:15%; margin-top:0px;">
-				   <p>Three days of highly interactive training workshops provides a toolbox of skills for adopting to the volatile businnes environment.</p></div></figcaption>
-		</figure>
-			 <a href="#0" class="modalfire" id="modal-trigger24" data-type="cd-modal-trigger" ><button class="buttonE">Lean More</button></a>
-	   </div>
-
-
-	</div>
-</div>
-<div class="container-fluid col-12 d-none d-sm-block" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-quad"><hr style="border-top: 2px solid #8c8b8b; width:97%; position:absolute; margin-top:50px;"></div>
-
-<div class="container col-sm-12" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad"><a href="#0" class="modalfire" id="modal-trigger27" data-type="cd-modal-trigger" ><button class="buttonf" style="font-family: 'Oswald', sans-serif; margin-top:20px; font-size:23px;">TIMELINE</button></a></div>
-
-
-</div>
-
-
-
-
-<!-- Side Modals -->
-
-<div class="container-fluid text-center" style="padding:0px 50px; padding-top: 20px; padding-bottom: 100px;">
-
-<div style="font-size:40px; color: #ffffff; font-family: 'Reem Kufi', sans-serif;" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-quad">Previous Speakers<hr style="border-top: 2px solid #8c8b8b; width:90%; margin-top:0px;"></div>
-
-<br>
-<br>
-
-
-		<section id="cd-team" class="cd-section" style="color: #8abeb2;">
-			<div class="cd-container container-fluid text-center">
-
-				<ul>
-					<div class="container-fluid speakerbox">
-					<div class="row">
-					<div class="container-fluid text-center col-sm-6 col-md-6 col-lg-3 col-xl-3" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-quad" >
-					<li>
-						<a href="#0" data-type="member-1">
-							<figure2>
-								<img class="img-fluid" src="images/varun.jpg" alt="Team member 1">
-								<div class="cd-img-overlay"><span>View Bio</span></div>
-							</figure2>
-
-							<div class="cd-member-info">
-								VARUN CHANDRAN <span>Founder/CEO of Corporate360</span>
-							</div> <!-- cd-member-info -->
-						</a>
-					</li>
-					</div>
-					<div class="container-fluid col-sm-6 col-md-6 col-lg-3 col-xl-3" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-quad" >
-					<li>
-						<a href="#0" data-type="member-2">
-							<figure2>
-								<img class="img-fluid" src="images/kz1eSyc8_400x400.jpg" alt="Team member 1">
-								<div class="cd-img-overlay"><span>View Bio</span></div>
-							</figure2>
-
-							<div class="cd-member-info">
-								AFSAL SALU <span>CoFounder delyver.com
-bigbasket.com</span>
-							</div> <!-- cd-member-info -->
-						</a>
-					</li>
-					</div>
-
-					<div class="container-fluid col-sm-6 col-md-6 col-lg-3 col-xl-3" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-quad" >
-					<li>
-						<a href="#0" data-type="member-3">
-							<figure2>
-								<img class="img-fluid" src="images/0.jpg" alt="Team member 1">
-								<div class="cd-img-overlay"><span>View Bio</span></div>
-							</figure2>
-
-							<div class="cd-member-info">
-								VINAY J KYNADI <span>Lead
-Investor from Calicut</span>
-							</div> <!-- cd-member-info -->
-						</a>
-					</li>
-					</div>
-					<div class="container-fluid col-sm-6 col-md-6 col-lg-3 col-xl-3" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-quad" >
-					<li>
-						<a href="#0" data-type="member-4">
-							<figure2>
-								<img class="img-fluid" src="images/jx1pk2Xi_400x400.jpg" alt="Team member 1">
-								<div class="cd-img-overlay"><span>View Bio</span></div>
-							</figure2>
-
-							<div class="cd-member-info">
-								PRAVEEN PARAMESWAR <span>CEO Thoughts Academy</span>
-							</div> <!-- cd-member-info -->
-						</a>
-					</li>
-					</div>
-
-
-					</div>
-
-					</div>
-				</ul>
-			</div> <!-- cd-container -->
-		</section>
-
-	</div>
-	</div>
-	<div class="grii">
-	<div class="container text-center" style="padding: 50px 5px">
-		<h3 style="padding: 20px 0px; font-size: 30px; color:darkslategray;font-family: 'Reem Kufi', sans-serif;">PREVIOUS TITLE SPONSORS </h3>
-		<hr style="border-top: 2px solid #8c8b8b; width:90%; margin-top:0px;">
-		<div class="container-fluid  row">
-			<div class="col-6 text-right">
-				<img class="img-fluid" src="images/TBINITC.png">
-			</div>
-			<div class="col-6 text-left">
-				<img class="img-fluid" src="images/MakerVillage.png">
-			</div>
-		</div>
-		<hr style="border-top: 2px solid #8c8b8b; width:90%; margin-top:15px;">
-		<h3 style="padding: 20px 0px; font-size: 30px; color:darkslategray;font-family: 'Reem Kufi', sans-serif;">PREVIOUS SPONSORS</h3>
-		<hr style="border-top: 2px solid #8c8b8b; width:90%; margin-top:0px;">
-		<div class="container-fluid row">
-			<div class="col-4 text-center" style="margin-top: 20px;">
-				<img class="img-fluid" src="images/IEEE_logo.png">
-			</div>
-			<div class="col-4 text-center" style="margin-top: 35px;">
-				<img class="img-fluid" src="images/Nasscom-logo.png">
-			</div>
-			<div class="col-4 text-center">
-				<img class="img-fluid" src="images/channeliamlogowite.png">
-			</div>
-			<div class="col-4 text-center">
-				<img class="img-fluid" src="images/logo_transparent.png">
-			</div>
-			<div class="col-4 text-center">
-				<img class="img-fluid" src="images/Kerala Startup Mission Logo.png">
-			</div>
-			<div class="col-4 text-center">
-				<img class="img-fluid" src="images/FABLAB KERALA - Trivandrum.png">
-			</div>
-		</div>
-	</div>
-	</div>
-<!-- Footer -->
-
-	 <footer id="myFooter">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-sm-5 text-left">
-                    <h5>Contact Us</h5>
-                    <ul>
-                        <li><a href="mailto:interface@tathva.org">interface@tathva.org</a></li>
-                        <li>Emil Joshy: <a href="tel:+919846627295">+91 98466 27295</a></li>
-                        <li>Amal Jood: <a href="tel:+919207583584">+91 92075 83584</a></li>
-                        <li>Vishnu Santhosh: <a href="tel:+918138984635">+91 81389 84635</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3 text-left">
-                    <h5>Links</h5>
-                    <ul>
-                        <li><a href="register.html">Registration</a></li>
-                        <!--li><a >Gallery</a></li-->
-                    </ul>
-                </div>
-				<div class="col-sm-4 text-left">
-                    <h5>Address</h5>
-                    <ul>
-                        <li>NIT Calicut</li>
-						<li>Mukkam Road, Kerala</li>
-						<li>673601</li>
-                    </ul>
-                </div>
-            </div>
-            <iframe id="map-container" frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.2128500089893!2d75.93321922382047!3d11.319147321369957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba642fd50000001%3A0xbe8a77db953bda6c!2sNational+Institute+of+Technology%2C+Calicut!5e0!3m2!1sen!2sin!4v1527255945810" >
-            </iframe>
-        </div>
-        <div class="social-networks" style="">
-            <a href="https://twitter.com/Interface2k18" class="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.facebook.com/TheMalabarStorm/" class="facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://github.com/interfacegit" class="github"><i class="fab fa-github"></i></a>
-        </div>
-        <div class="footer-copyright" id="credits">
-            <p>Developed by <a href="https://facebook.com/ivanbiji">Ivan Biji</a> & Designed by <a href="https://www.facebook.com/aman.harikumar.5">Aman Harikumar</a>&nbsp;© 2018 </p>
-        </div>
-    </footer>
-
-
-<div class="cd-overlay"></div>
-</div>
-</div>
-<!-- side modals details-->
-
-<div class="cd-member-bio member-1">
-		<div class="cd-member-bio-pict">
-			<img src="images/varunchand.jpg" alt="Member Bio image">
-		</div> <!-- cd-member-bio-pict -->
-
-		<div class="cd-bio-content">
-			<h1>Varun Chandran</h1>
-			<p>Mr. Varun Chandran is the Founder of Corporate 360 Pte Ltd., a firm which has operations in four continents today, and serves as its Chief Executive Officer. Mr. Chandran is the leader in B2B sales intelligence. He is responsible for advancing C360's vision to deliver best-in-class marketing data and world class sales & marketing analytics software to global markets.  He holds executive leadership honors from HaaS School of Business, University of California, Berkeley. </p>
-		</div> <!-- cd-bio-content -->
-	</div> <!-- cd-member-bio -->
-
-	<div class="cd-member-bio member-2">
-		<div class="cd-member-bio-pict">
-			<img src="images/afsal-salu.jpg" alt="Member Bio image">
-		</div> <!-- cd-member-bio-pict -->
-
-		<div class="cd-bio-content">
-			<h1>Afsal Salu</h1>
-			<p>Mr. Afsal Salu is the co-founder of Delyver.com, India's first hyperlocal on-demand marketplace in 2010, much before the words 'hyperlocal' and 'marketplace' became common parlance in Indian startup community. Delyver got acquired by BigBasket.com, India's largest e-grocer, in 2015.
-Post acquisition, Mr. Salu built the Express Delivery business for BigBasket from scratch to 2nd largest BU within 7 months.  After a successful stint in Retail,  he is now onto his 2nd venture – BestDoc, an intelligent Patient Relationship Management (PRM) for Hospitals.  </p>
-		</div> <!-- cd-bio-content -->
-	</div> <!-- cd-member-bio -->
-
-	<div class="cd-member-bio member-3">
-		<div class="cd-member-bio-pict">
-			<img src="images/kynadi.jpg" alt="Member Bio image">
-		</div> <!-- cd-member-bio-pict -->
-
-		<div class="cd-bio-content">
-			<h1>Vinay J Kynadi</h1>
-			<p>President & CEO, Herbz International  is an experienced sales & marketing professional. Mr. Kynadi has launched and promoted natural product brands like Invigo, Vivacy and Aryoga after his tenure with the Coca-Cola Company where he managed some of the world's most valuable brands. </p>
-		</div> <!-- cd-bio-content -->
-	</div>
-	<div class="cd-member-bio member-4">
-		<div class="cd-member-bio-pict">
-			<img src="images/pic1.jpg" alt="Member Bio image">
-		</div> <!-- cd-member-bio-pict -->
-
-		<div class="cd-bio-content">
-			<h1>Praveen Parameswar</h1>
-			<p>An emerging Organization Development (OD) Strategist, lifologist, and researcher in ‘Human Behaviour’, is the CEO of Thoughts Academy, a rapidly growing company in the field of Organization Development Interventions. He helps various MNCs, NGOs and massive Government projects to multiply growth through capitalizing the full potential of their human resource. He is also a consultant in education planning and management for a handful of Higher Education Institutions across India and abroad.  He has done presentations in more than 1000 platforms across India and delivered session in more than 6 countries including the UK and the UAE, and has been a panellist for national television channels such as Times-Now and NDTV. He currently hosts ‘Samvadam’, a celebrated Socio-Political talk show, for Doordarsan, Kerala.</p>
-		</div> <!-- cd-bio-content -->
-	</div><!-- cd-member-bio -->
-	<a href="#0" class="cd-member-bio-close">Close</a>
-	<!-- close the author bio section -->
-	<div class="cd-modal" data-modal="modal-trigger22">
-		<div class="cd-svg-bg"
-		data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"
-		data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z"
-		data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"
-		data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z"
-		data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"
-		data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
-			<svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
-				<title>SVG Modal background</title>
-				<path id="cd-changing-path-122" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
-				<path id="cd-changing-path-222" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
-				<path id="cd-changing-path-322" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
-			</svg>
-		</div>
-
-		<div class="cd-modal-content">
-			<h1>IDEA SLAM</h1>
-			<h2><blockquote>"An idea is like a virus. Resilient. Highly contagious. And even the smallest seed of an idea can grow." - Cobb, Inception</blockquote>
-Open Talk will give you a platform to simply express your ideas on a dias and plant the seed in the minds of everyone present there.
-This will provide the opportunity to find like minded people, form a team and start on the journey to make the idea a reality.</h2>
-			<a href="register.html"><button class="buttonf">REGISTER NOW</button></a>
-		</div> <!-- cd-modal-contsent -->
-
-		<a href="#0" class="modal-close">Close</a>
-	</div>
-		<div class="cd-modal" data-modal="modal-trigger23">
-		<div class="cd-svg-bg"
-		data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"
-		data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z"
-		data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"
-		data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z"
-		data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"
-		data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
-			<svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
-				<title>SVG Modal background</title>
-				<path id="cd-changing-path-123" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
-				<path id="cd-changing-path-223" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
-				<path id="cd-changing-path-323" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
-			</svg>
-		</div>
-
-		<div class="cd-modal-content">
-			<h1>START-UP PITCHING</h1>
-			<h2> Are you confident that you can convince big shot investors to fund for your product?
-Test yourself at our StartUp Pitching competition which includes competetive prototyping and  aims to provide experience and guidance from renowned professional and a chance to meet other start up founders to connect and share ideas</h2>
-			<a href="register.html"><button class="buttonf">REGISTER NOW</button></a>
-		</div> <!-- cd-modal-content -->
-
-		<a href="#0" class="modal-close">Close</a>
-	</div>
-		<div class="cd-modal" data-modal="modal-trigger24">
-		<div class="cd-svg-bg"
-		data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"
-		data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z"
-		data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"
-		data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z"
-		data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"
-		data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
-			<svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
-				<title>SVG Modal background</title>
-				<path id="cd-changing-path-124" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
-				<path id="cd-changing-path-224" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
-				<path id="cd-changing-path-324" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
-			</svg>
-		</div>
-
-		<div class="cd-modal-content">
-			<h1>WORKSHOPS</h1>
-			<h2>Three days of highly interactive training workshops provides a toolbox of skills for adopting to the volatile businnes environment.</h2>
-			<a href="register.html"><button class="buttonf">REGISTER NOW</button></a>
-		</div> <!-- cd-modal-content -->
-
-		<a href="#0" class="modal-close">Close</a>
-	</div>
-		<div class="cd-modal" data-modal="modal-trigger25">
-		<div class="cd-svg-bg"
-		data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"
-		data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z"
-		data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"
-		data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z"
-		data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"
-		data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
-			<svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
-				<title>SVG Modal background</title>
-				<path id="cd-changing-path-125" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
-				<path id="cd-changing-path-225" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
-				<path id="cd-changing-path-325" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
-			</svg>
-		</div>
-
-		<div class="cd-modal-content">
-			<h1>MENTORING WEEKEND</h1>
-			<img class="img-fluid" src="images/mentorshipdesc.jpg" width="100%">
-			<a href="register.html"><button class="buttonf">REGISTER NOW</button></a>
-		</div> <!-- cd-modal-content -->
-
-		<a href="#0" class="modal-close">Close</a>
-	</div>
-
-  <div class="cd-modal" data-modal="modal-trigger26">
-  <div class="cd-svg-bg"
-  data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"
-  data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z"
-  data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"
-  data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z"
-  data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"
-  data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
-    <svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
-      <title>SVG Modal background</title>
-      <path id="cd-changing-path-126" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
-      <path id="cd-changing-path-226" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
-      <path id="cd-changing-path-326" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
-    </svg>
-  </div>
-
-  <div class="cd-modal-content">
-    <h1>Interface’18: Timeline</h1>
-
-    <table class="table table-hover table-bordered">
-   <thead>
-     <tr>
-       <th>EVENT</th>
-       <th>DATE</th>
-     </tr>
-   </thead>
-   <tbody>
-     <tr>
-
-       <td>Applications for 'Mentorship Weekend' opens</td>
-       <td style="font-size:14px;">1 JULY 2018</td>
-     </tr>
-     <tr>
-
-       <td>Application portal for ‘Mentorship Weekend’ closes</td>
-       <td style="font-size:14px;">25 SEPTEMBER 2018</td>
-     </tr>
-     <tr>
-
-       <td>Online interview of applicants</td>
-       <td style="font-size:14px;">26 SEPTEMBER 2018</td>
-     </tr>
-     <tr>
-
-       <td>Announcement of shortlisted teams</td>
-       <td style="font-size:14px;">27 SEPTEMBER 2018</td>
-     </tr>
-     <tr>
-
-       <td>Mentorship Weekend</td>
-       <td style="font-size:14px;">5th and 6th OCTOBER 2018</td>
-     </tr>
-     <tr>
-
-       <td>Registration for talks and workshops opens</td>
-       <td style="font-size:14px;">5th OCTOBER 2018</td>
-     </tr>
-     <tr>
-
-       <td>BPLAN Presentation</td>
-       <td style="font-size:14px;">6th OCTOBER 2018</td>
-     </tr>
-     <tr>
-
-       <td>Interface Start-up Summit</td>
-       <td style="font-size:14px;">12, 13 and 14 OCTOBER 2018</td>
-     </tr>
-   </tbody>
- </table>
-
-    <h2>
-      <b>Day One - Interface’18 | OCT 12</b><br>
-      <ul class="list-group">
-      <li class="list-group-item">Formal Inauguration</li>
-      <li class="list-group-item">Talks</li>
-      <li class="list-group-item">Elevator Pitching</li>
-      <li class="list-group-item">Workshop 1 and 2</li>
-      </ul>
-      <br>
-      <b>Day Two - Interface’18 | OCT 13</b><br>
-      <ul class="list-group">
-      <li class="list-group-item">Panel Discussion</li>
-      <li class="list-group-item">Workshop 3 and 4</li>
-      <li class="list-group-item">Start-up Pitching</li>
-      <li class="list-group-item">Talks</li>
-      </ul>
-      <br>
-      <b>Day Three - Interface’18 | OCT 14</b><br>
-      <ul class="list-group">
-      <li class="list-group-item">Talks</li>
-      <li class="list-group-item">Round Table and Networking (GD with Judges and Participants)</li>
-      <li class="list-group-item">Idea Slam</li>
-      <li class="list-group-item">Results and Closing Ceremony</li>
-      </ul>
-
-</h2>
-    <a href="register.html"><button class="buttonf">REGISTER NOW</button></a>
-  </div> <!-- cd-modal-content -->
-
-  <a href="#0" id="node1" class="modal-close">Close</a>
-</div>
-
-
-<div class="cd-modal" data-modal="modal-trigger27">
-<div class="cd-svg-bg"
-data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"
-data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z"
-data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"
-data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z"
-data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"
-data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
-  <svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
-    <title>SVG Modal background</title>
-    <path id="cd-changing-path-127" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
-    <path id="cd-changing-path-227" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
-    <path id="cd-changing-path-327" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
-  </svg>
-</div>
-
-<div class="cd-modal-content">
-  <h1>Interface’18: Timeline</h1>
-
-  <table class="table table-hover table-bordered">
- <thead>
-   <tr>
-     <th>EVENT</th>
-     <th>DATE</th>
-   </tr>
- </thead>
- <tbody>
-   <tr>
-
-     <td>Applications for 'Mentorship Weekend' opens</td>
-     <td style="font-size:14px;">1 JULY 2018</td>
-   </tr>
-   <tr>
-
-     <td>Application portal for ‘Mentorship Weekend’ closes</td>
-     <td style="font-size:14px;">25 SEPTEMBER 2018</td>
-   </tr>
-   <tr>
-
-     <td>Online interview of applicants</td>
-     <td style="font-size:14px;">26 SEPTEMBER 2018</td>
-   </tr>
-   <tr>
-
-     <td>Announcement of shortlisted teams</td>
-     <td style="font-size:14px;">27 SEPTEMBER 2018</td>
-   </tr>
-   <tr>
-
-     <td>Mentorship Weekend</td>
-     <td style="font-size:14px;">5th and 6th OCTOBER 2018</td>
-   </tr>
-   <tr>
-
-     <td>Registration for talks and workshops opens</td>
-     <td style="font-size:14px;">5th OCTOBER 2018</td>
-   </tr>
-   <tr>
-
-     <td>BPLAN Presentation</td>
-     <td style="font-size:14px;">6th OCTOBER 2018</td>
-   </tr>
-   <tr>
-
-     <td>Interface Start-up Summit</td>
-     <td style="font-size:14px;">12, 13 and 14 OCTOBER 2018</td>
-   </tr>
- </tbody>
-</table>
-
-  <h2>
-    <b>Day One - Interface’18 | OCT 12</b><br>
-    <ul class="list-group">
-    <li class="list-group-item">Formal Inauguration</li>
-    <li class="list-group-item">Talks</li>
-    <li class="list-group-item">Elevator Pitching</li>
-    <li class="list-group-item">Workshop 1 and 2</li>
-    </ul>
-    <br>
-    <b>Day Two - Interface’18 | OCT 13</b><br>
-    <ul class="list-group">
-    <li class="list-group-item">Panel Discussion</li>
-    <li class="list-group-item">Workshop 3 and 4</li>
-    <li class="list-group-item">Start-up Pitching</li>
-    <li class="list-group-item">Talks</li>
-    </ul>
-    <br>
-    <b>Day Three - Interface’18 | OCT 14</b><br>
-    <ul class="list-group">
-    <li class="list-group-item">Talks</li>
-    <li class="list-group-item">Round Table and Networking (GD with Judges and Participants)</li>
-    <li class="list-group-item">Idea Slam</li>
-    <li class="list-group-item">Results and Closing Ceremony</li>
-    </ul>
-
-</h2>
-  <a href="register.html"><button class="buttonf">REGISTER NOW</button></a>
-</div> <!-- cd-modal-content -->
-
-<a href="#0" id="node1" class="modal-close">Close</a>
-</div>
-
-	<div class="cd-cover-layer"></div>
-<!--Preload Images  -->
-
-<div class="preload-images"></div>
-
-
-<!-- js Scripts -->
-<script src="includes/snap.svg-min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-<script src="custom/main.js"></script>
-<script src="includes/modernizr.js"></script>
-<script src="includes/aos.js"></script>
-<script>
-var myVar;
-
-function myFunction() {
-    myVar = setTimeout(showPage, 0);
-	AOS.init();
-	window.addEventListener('load', AOS.refresh);
-}
-
-function showPage() {
-
-  document.getElementById("loading").style.display = "none";
-  document.getElementById("fullbody").style.display = "block";
-  AOS.init();
-
-}
-
-
-AOS.init();
-window.addEventListener('load', AOS.refresh);
-
-
-$(window).scroll(function() {
-  var offset = $(window).scrollTop();
-  console.log(offset);
-  $('.navbar-custom').toggleClass('trans', offset > 100);
-});
-
-</script>
+<body>
+	<header class="cd-main-header">
+		<div class="cd-main-header__logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a></div>
+
+		<nav class="cd-main-nav js-main-nav">
+			<ul class="cd-main-nav__list js-signin-modal-trigger">
+				<!-- inser more links here -->
+				<li><a class="cd-main-nav__item cd-main-nav__item--signin" href="#0" data-signin="login">Sign in</a></li>
+				<li><a class="cd-main-nav__item cd-main-nav__item--signup" href="#0" data-signin="signup">Sign up</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="cd-signin-modal js-signin-modal">
+		<!-- this is the entire modal form, including the background -->
+		<div class="cd-signin-modal__container">
+			<!-- this is the container wrapper -->
+			<ul class="cd-signin-modal__switcher js-signin-modal-switcher js-signin-modal-trigger">
+				<li><a href="#0" data-signin="login" data-type="login">Sign In</a></li>
+				<li><a href="#0" data-signin="signup" data-type="signup">Sign Up</a></li>
+			</ul>
+
+			<div class="cd-signin-modal__block js-signin-modal-block" data-type="login">
+				<!-- log in form -->
+				<form class="cd-signin-modal__form">
+					<p class="cd-signin-modal__fieldset">
+						<label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace" for="signin-email">E-mail</label>
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
+						 id="signin-email" type="email" placeholder="E-mail">
+						<span class="cd-signin-modal__error">Error message here!</span>
+					</p>
+
+					<p class="cd-signin-modal__fieldset">
+						<label class="cd-signin-modal__label cd-signin-modal__label--password cd-signin-modal__label--image-replace" for="signin-password">Password</label>
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
+						 id="signin-password" type="text" placeholder="Password">
+						<a href="#0" class="cd-signin-modal__hide-password js-hide-password">Hide</a>
+						<span class="cd-signin-modal__error">Error message here!</span>
+					</p>
+
+					<p class="cd-signin-modal__fieldset">
+						<input type="checkbox" id="remember-me" checked class="cd-signin-modal__input ">
+						<label for="remember-me">Remember me</label>
+					</p>
+
+					<p class="cd-signin-modal__fieldset">
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width" type="submit" value="Login">
+					</p>
+				</form>
+
+				<p class="cd-signin-modal__bottom-message js-signin-modal-trigger"><a href="#0" data-signin="reset">Forgot your
+						password?</a></p>
+			</div> <!-- cd-signin-modal__block -->
+
+			<div class="cd-signin-modal__block js-signin-modal-block" data-type="signup">
+				<!-- sign up form -->
+				<form class="cd-signin-modal__form">
+					<p class="cd-signin-modal__fieldset">
+						<label class="cd-signin-modal__label cd-signin-modal__label--username cd-signin-modal__label--image-replace" for="signup-username">Name</label>
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
+						 id="signup-username" type="text" placeholder="Name">
+						<span class="cd-signin-modal__error">Error message here!</span>
+					</p>
+
+					<p class="cd-signin-modal__fieldset">
+						<label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace" for="signup-email">E-mail</label>
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
+						 id="signup-email" type="email" placeholder="E-mail">
+						<span class="cd-signin-modal__error">Error message here!</span>
+					</p>
+
+					<p class="cd-signin-modal__fieldset">
+						<label class="cd-signin-modal__label cd-signin-modal__label--password cd-signin-modal__label--image-replace" for="signup-password">Password</label>
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
+						 id="signup-password" type="text" placeholder="Password">
+						<a href="#0" class="cd-signin-modal__hide-password js-hide-password">Hide</a>
+						<span class="cd-signin-modal__error">Error message here!</span>
+					</p>
+					<p class="cd-signin-modal__fieldset">
+						<label class="cd-signin-modal__label cd-signin-modal__label--mobno cd-signin-modal__label--image-replace" for="signup-mobno">Mobile
+							number</label>
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
+						 id="signup-mobno" type="number" min="999999999" max="999999999999" placeholder="Mobile number">
+						<span class="cd-signin-modal__error">Error message here!</span>
+					</p>
+
+					<p class="cd-signin-modal__fieldset">
+						<label class="cd-signin-modal__label cd-signin-modal__label--college cd-signin-modal__label--image-replace" for="signup-college">College
+							name</label>
+						<input type="text" value="" class="js-combobox cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
+						 list="COLLEGES" id="signup-college" placeholder="College name (Choose from the given list)" data-json-path="list.json">
+						<span class="cd-signin-modal__error">Error message here!</span>
+					</p>
+
+					<p class="cd-signin-modal__fieldset">
+						<input type="checkbox" id="accept-terms" class="cd-signin-modal__input ">
+						<label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+					</p>
+
+					<p class="cd-signin-modal__fieldset">
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding" type="submit"
+						 value="Create account">
+					</p>
+				</form>
+			</div> <!-- cd-signin-modal__block -->
+
+			<div class="cd-signin-modal__block js-signin-modal-block" data-type="reset">
+				<!-- reset password form -->
+				<p class="cd-signin-modal__message">Lost your password? Please enter your email address. You will receive a link to
+					create a new password.</p>
+
+				<form class="cd-signin-modal__form">
+					<p class="cd-signin-modal__fieldset">
+						<label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace" for="reset-email">E-mail</label>
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
+						 id="reset-email" type="email" placeholder="E-mail">
+						<span class="cd-signin-modal__error">Error message here!</span>
+					</p>
+
+					<p class="cd-signin-modal__fieldset">
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding" type="submit"
+						 value="Reset password">
+					</p>
+				</form>
+
+				<p class="cd-signin-modal__bottom-message js-signin-modal-trigger"><a href="#0" data-signin="login">Back to log-in</a></p>
+			</div> <!-- cd-signin-modal__block -->
+			<a href="#0" class="cd-signin-modal__close js-close">Close</a>
+		</div> <!-- cd-signin-modal__container -->
+	</div> <!-- cd-signin-modal -->
+
+
+
+
+
+
+	<script src="js/placeholders.min.js"></script> <!-- polyfill for the HTML5 placeholder attribute -->
+	<script src="js/main.js"></script> <!-- Resource JavaScript -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="jquery-json-to-datalist.js"></script>
+	<script>
+		$('.js-combobox').jsonToDatalist();
+	</script>
 </body>
+
 </html>
