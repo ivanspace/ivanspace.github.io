@@ -31,12 +31,9 @@
                         $.each(data, function(key, val) {
                             items.push("<option value='" + val.name + "'>");
                         });
-
+                        
                         // Add datalist
-                        $( "<datalist/>", {
-                            "id": $this_list,
-                            html: items.join("")
-                        }).insertAfter($this);
+                        $( "<datalist/>", { "id": "COLLEGES", html: items.join("")  }).insertAfter($this);
 
                         o.callback.call(this, $this);
 

@@ -51,6 +51,7 @@
 		});
 		
 		this.blocks[0].getElementsByTagName('form')[0].addEventListener('submit', function(event){
+			
 			event.preventDefault();
 			self.toggleError(document.getElementById('signin-mobno'), true);
 		});
