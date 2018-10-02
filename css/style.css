@@ -4,9 +4,34 @@
 	 http://css-tricks.com
 */
 
+* { 
+	margin: 0; 
+	padding: 0; 
+}
+body { 
+	font: 14px/1.4 Georgia, Serif;
+	background: #999; 
+}
 
+#page-wrap { 
+	width: 760px; 
+	margin: 80px auto; 
+	background: white;
+	padding: 50px;
+	border: 50px solid #888; 
+}
 
-
+h1, h2 {
+	font: bold 50px Sans-Serif;
+	letter-spacing: -2px;
+}
+h2 {
+	font-size: 24px;
+	margin: 40px -50px 40px;
+	padding: 10px 50px;
+	letter-spacing: -1px;
+	background: #ffcc00;
+}
 p {
 	margin: 0 0 40px 0;
 }
