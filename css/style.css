@@ -13,14 +13,14 @@ body {
 	background: #999; 
 }
 
-#page-wrap { 
+/*#page-wrap { 
 	width: 760px; 
-	margin: 80px auto; 
+
 	background: white;
 	padding: 50px;
 	border: 50px solid #888; 
 }
-
+*/
 h1, h2 {
 	font: bold 50px Sans-Serif;
 	letter-spacing: -2px;
