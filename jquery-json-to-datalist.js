@@ -33,7 +33,10 @@
                         });
 
                         // Add datalist
-                        $( "<datalist/>", { "id": $this_list, html: items.join("")  }).insertAfter($this);
+                        $( "<datalist/>", {
+                            "id": $this_list,
+                            html: items.join("")
+                        }).insertAfter($this);
 
                         o.callback.call(this, $this);
 

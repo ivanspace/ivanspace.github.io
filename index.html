@@ -14,55 +14,7 @@
 	<link href="https://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet" type="text/css">
 
 	<title>Log In &amp; Sign Up Form | CodyHouse</title>
-	<style>
-		/*
-	 CSS-Tricks Example
-	 by Chris Coyier
-	 http://css-tricks.com
-*/
-
-* { 
-	margin: 0; 
-	padding: 0; 
-}
-
-
-p {
-	margin: 0 0 40px 0;
-}
-p:last-child { margin-bottom: 0; }
-
-input {
-	font: 16px "Lucida Grande", Sans-Serif;
-}
-.datalist {
-	list-style: none;
-	display: none;
-	background: white;
-	box-shadow: 0 2px 2px #999;
-	position: absolute;
-	left: 0;
-	top: 0;
-	max-height: 300px;
-	overflow-y: auto;
-}
-.datalist:empty {
-	display: none !important;
-}
-.datalist li {
-	padding: 3px;
-	font: 13px "Lucida Grande", Sans-Serif;
-}
-.datalist li.active {
-	background: #3875d7;
-	color: white;
-}
-</style>
 </head>
-
-
-
-
 
 <body>
 	<header class="cd-main-header">
@@ -147,63 +99,6 @@ input {
 							number</label>
 						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
 						 id="signup-mobno" type="number" min="999999999" max="999999999999" placeholder="Mobile number">
-
-
-						<p><input type="text" id="search" list="states" placeholder="Find U.S. State"></p>
-
-						<datalist id="states">
-							<option value="Alabama">
-							<option value="Alaska">
-							<option value="Arizona">
-							<option value="Arkansas">
-							<option value="California">
-							<option value="Colorado">
-							<option value="Connecticut">
-							<option value="Delaware">
-							<option value="Florida">
-							<option value="Georgia">
-							<option value="Hawaii">
-							<option value="Idaho">
-							<option value="Illinois">
-							<option value="Indiana">
-							<option value="Iowa">
-							<option value="Kansas">
-							<option value="Kentucky">
-							<option value="Louisiana">
-							<option value="Maine">
-							<option value="Maryland">
-							<option value="Massachusetts">
-							<option value="Michigan">
-							<option value="Minnesota">
-							<option value="Mississippi">
-							<option value="Missouri">
-							<option value="Montana">
-							<option value="Nebraska">
-							<option value="Nevada">
-							<option value="New Hampshire">
-							<option value="New Jersey">
-							<option value="New Mexico">
-							<option value="New York">
-							<option value="North Carolina">
-							<option value="North Dakota">
-							<option value="Ohio">
-							<option value="Oklahoma">
-							<option value="Oregon">
-							<option value="Pennsylvania">
-							<option value="Rhode Island">
-							<option value="South Carolina">
-							<option value="South Dakota">
-							<option value="Tennessee">
-							<option value="Texas">
-							<option value="Utah">
-							<option value="Vermont">
-							<option value="Virginia">
-							<option value="Washington">
-							<option value="West Virginia">
-							<option value="Wisconsin">
-							<option value="Wyoming">
-
-						</datalist>
 						<span class="cd-signin-modal__error">Error message here!</span>
 					</p>
 
@@ -212,8 +107,6 @@ input {
 							name</label>
 						<input type="text" value="" class="js-combobox cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
 						 list="COLLEGES" id="signup-college" placeholder="College name (Choose from the given list)" data-json-path="list.json">
-
-						<datalist id="COLLEGES"></datalist>
 						<span class="cd-signin-modal__error">Error message here!</span>
 					</p>
 
@@ -254,16 +147,10 @@ input {
 		</div> <!-- cd-signin-modal__container -->
 	</div> <!-- cd-signin-modal -->
 
-	<div>
-
-
-	</div>
 
 
 
 
-	<script src="js/jquery-1.8.2.min.js"></script>
-	<script src="js/modernizr.custom.95508.js"></script>
 
 	<script src="js/placeholders.min.js"></script> <!-- polyfill for the HTML5 placeholder attribute -->
 	<script src="js/main.js"></script> <!-- Resource JavaScript -->
@@ -271,17 +158,20 @@ input {
 	<script src="jquery-json-to-datalist.js"></script>
 	<script>
 		$('.js-combobox').jsonToDatalist();
-
-		// Safari reports success of list attribute, so doing ghetto detection instead
-		yepnope({
-			test: (!Modernizr.input.list || (parseInt($.browser.version) > 400)),
-			yep: [
-				'js/jquery.relevant-dropdown.js',
-				'js/load-fallbacks.js'
-			]
-		});
 	</script>
 
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/modernizr.custom.95508.js"></script>
+<script>
+	// Safari reports success of list attribute, so doing ghetto detection instead
+	yepnope({
+	  test : (!Modernizr.input.list || (parseInt($.browser.version) > 400)),
+	  yep : [
+		  'js/jquery.relevant-dropdown.js',
+				'js/load-fallbacks.js'
+	  ]
+	});
+</script>
 </body>
 
 </html>
